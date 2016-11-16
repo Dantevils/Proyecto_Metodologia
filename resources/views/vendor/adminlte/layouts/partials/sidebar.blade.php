@@ -37,15 +37,51 @@
             <li><a href="#"><i class='fa fa-automobile'></i> <span>{{ "Status de Pedidos" }}</span></a></li>
 
 
-            <!--Ingreso de heramientas-->
+            <!--Heramientas-->
             <li class="treeview">
-                <a href="#"><i class='fa fa-link'></i> <span>{{"Herramientas" }}</span> <i class="fa fa-angle-left pull-right"></i></a>
+                <a href="#"><i class='fa fa-gavel'></i> <span>{{"Herramientas" }}</span> <i class="fa fa-angle-left pull-right"></i></a>
                 <ul class="treeview-menu">
-                    <li><a href="/ingreso">{{ "Ingreso" }}</a></li>
-                    <li><a href="#">{{"Asignacion" }}</a></li>
+                    <!--Estado de Herramientas: Lista de Herramientas y datos asociados Advertencia de STOCK-->
+                    <li><a href="estadoherramientas">{{ "Estado" }}</a></li>
+                    <!---Ingreso de nuevos Materiales, Formulario en blanco para el ingeso-->
+                    <li><a href="ingresoherramientas">{{"Ingreso" }}</a></li>
+                    <!--Asignacion de Herramientas para los trabajadores Formulario y selecion multiple LISTAR TRABAJADORES -->
+                    <li><a href="despachoherramientas">{{"Despacho" }}</a></li>
+
+                </ul>
+                <!--Materiales-->
+            </li>
+            <li class="treeview">
+                <a href="#"><i class='fa fa-cubes'></i> <span>{{"Materiales" }}</span> <i class="fa fa-angle-left pull-right"></i></a>
+                <ul class="treeview-menu">
+                    <!--Estado de Materiales: Lista de Herramientas y datos asociados Advertencia de STOCK-->
+                    <li><a href="/ingresomaterial">{{ "Estado" }}</a></li>
+                    <!---Ingreso de nuevos Materiales, Formulario en blanco para el ingeso-->
+                    <li><a href="#">{{"Ingreso" }}</a></li>
+                    <!--Asignacion de Materiales para los trabajadores Formulario y selecion multiple LISTAR TRABAJADORES -->
+                    <li><a href="/ingresomaterial">{{ "Asignacion" }}</a></li>
+                </ul>
+            </li>
+            <!--Proevedores-->
+            </li>
+            <li class="treeview">
+                <a href="#"><i class='fa fa-shopping-cart'></i> <span>{{"Proveedores" }}</span> <i class="fa fa-angle-left pull-right"></i></a>
+                <ul class="treeview-menu">
+                    <!--Estado de Materiales: Lista de Herramientas y datos asociados Advertencia de STOCK-->
+                    <li><a href="/estadoproveedores">{{ "Listado" }}</a></li>
+                    <!---Ingreso de nuevos Materiales, Formulario en blanco para el ingeso-->
+                    <li><a href="/ingresoproveedores">{{"Ingreso" }}</a></li>
+                    <!--Asignacion de Materiales para los trabajadores Formulario y selecion multiple LISTAR TRABAJADORES -->
+                    <li><a href="#">{{ "Eliminacion" }}</a></li>
+                    <li><a href="/actualizacionproveedores">{{ "Actualizacion" }}</a></li>
                 </ul>
             </li>
 
+            <!--Ingreso de nuevo proeevedor
+            listado de proeevedores
+            actualizacion de proeevedor
+            eliminarcion de proevedor
+            ->
 
 
         </ul><!-- /.sidebar-menu -->

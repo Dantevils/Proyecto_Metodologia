@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <!--
 Landing page based on Pratt: http://blacktie.co/demo/pratt/
+
+
+Cambiar el lading por una intro mas genial
 -->
 <html lang="en">
 <head>
@@ -23,7 +26,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
     <meta name="twitter:site" content="@acachawiki" />
     <meta name="twitter:creator" content="@acacha1" />
 
-    <title>{{ trans('adminlte_lang::message.landingdescriptionpratt') }}</title>
+    <title>{{ "EVIL CORP" }}</title>
 
     <!-- Custom styles for this template -->
     <link href="{{ asset('/css/all.css') }}" rel="stylesheet">
@@ -72,7 +75,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
     <div class="container">
         <div class="row centered">
             <div class="col-lg-12">
-                <h1>Acacha <b><a href="https://github.com/acacha/adminlte-laravel">adminlte-laravel</a></b></h1>
+                <h1>EVIL<b><a href="https://github.com/acacha/adminlte-laravel">CORP</a></b></h1>
                 <h3>A <a href="https://laravel.com/">Laravel</a> {{ trans('adminlte_lang::message.laravelpackage') }}
                     scaffolding/boilerplate {{ trans('adminlte_lang::message.to') }} <a href="https://almsaeedstudio.com/preview">AdminLTE</a> {{ trans('adminlte_lang::message.templatewith') }}
                     <a href="http://getbootstrap.com/">Bootstrap</a> 3.0 {{ trans('adminlte_lang::message.and') }} <a href="http://blacktie.co/demo/pratt/">Pratt</a> Landing page</h3>

@@ -1,7 +1,7 @@
-<!--INGRESO DE HERRAMIENTAS-->
+<!--Eliminacion de proveedores-->
 
 <!--
-Ingreso de Herramientas: Mostrara una un formulario solicitando los datos para el ingreso de materiales
+Eliminacion de
 -->
 <html>
 @include('adminlte::layouts.partials.htmlheader')
@@ -19,29 +19,31 @@ Ingreso de Herramientas: Mostrara una un formulario solicitando los datos para e
         <section class="content">
             <div class="box">
                 <div class="box-header">
-                    <h3 class="box-title">Ingreso de Nueva Herramienta</h3>
+                    <h3 class="box-title">Eliminacion de Proveedores</h3>
                 </div>
                 <!--FROMULARIO-->
                 <!---Formulario de ingreso de herramientas-->
                 <div class="box-body">
-                    {!! Form::open(['route'=>'herramienta.store','metod'=>'POST','files'=>'true']) !!}
+                    {!! Form::open(['route'=>'proveedor.create','metod'=>'POST','files'=>'true']) !!}
                     <table id="example1" class="table table-bordered table-striped">
                         <thead>
                         <tr>
-                            <th>Marca o Tipo</th>
-                            <th>Descripcion</th>
-                            <th>Cantidad</th>
-                            <!--   <th>Cantidad PPTO</th>variar
-                            <th>Fecha Critica</th>-->
+                            <th>Proveedor</th>
+                            <th>Nuevo Nombre</th>
+                            <th>Nuevo Fono</th>
+                            <th>Nuevo Email</th>
+                            <th>Nuevo Detalle</th>
                         </tr>
                         </thead>
 
                         <tbody>
 
                         <tr>
-                            <td>{!!  Form::text('marca', null,['class'=>'form-control','required'])!!}</td>
-                            <td>{!!  Form::text('descripcion', null,['class'=>'form-control','required'])!!}</td>
-                            <td>{!!  Form::text('stock', null,['class'=>'form-control','required'])!!}</td>
+                            <td>{{ Form::select('select_id',$array, null, array('class' => 'form-control')) }}</td>
+                            <td>{!!  Form::text('nombre',null,['class'=>'form-control'])!!}</td>
+                            <td>{!!  Form::text('fono', null,['class'=>'form-control'])!!}</td>
+                            <td>{!!  Form::text('email', null,['class'=>'form-control'])!!}</td>
+                            <td>{!!  Form::text('detalle', null,['class'=>'form-control'])!!}</td>
                         </tr>
 
                         </tbody>
@@ -83,4 +85,3 @@ Ingreso de Herramientas: Mostrara una un formulario solicitando los datos para e
     });
 </script>
 </html>
-
